@@ -1,5 +1,6 @@
 const card = document.getElementById("card");
 const cardWrapper = document.getElementById("cardWrapper");
+const container = document.getElementById("container");
 card.addEventListener("dragstart", (event) => {
   event.dataTransfer.effectAllowed = "move";
 });
@@ -34,3 +35,6 @@ navigator.mediaDevices.getUserMedia({video:true},).then((strem)=>{
     var video = document.getElementById('video');
     video.srcObject= strem
 })
+
+
+console.log(document.documentElement.clientHeight);
